@@ -1,0 +1,139 @@
+.modal-call {
+  /* 2 Block model */
+  width: 100%;
+  max-width: 330px;
+  padding: 38px 38px 42px 38px;
+
+  
+  /* 4 Visual */
+  border-radius: 0;
+}
+.modal-call__title {
+  /* 2 Block model */
+  margin: 0;
+  margin-bottom: 20px;
+
+  /* 3 Typography */
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.modal-call__form {
+  /* 2 Block model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-call__form input {
+  /* 2 Block model */
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+
+  /* 3 Typography */
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #5a5a5a;
+
+  /* 4 Visual */
+  border: none;
+  border-bottom: 1px solid #edebe9;
+  outline: none;
+}
+.modal-call__form input::-webkit-input-placeholder {
+	text-overflow:ellipsis;
+	color: #5a5a5a;
+}
+.modal-call__form input::-moz-placeholder {
+	text-overflow:ellipsis;
+	color: #5a5a5a;
+}  
+.modal-call__form input:-ms-input-placeholder {
+	text-overflow:ellipsis;
+	color: #5a5a5a;
+}
+.modal-call__action {
+  /* 2 Block model */
+  padding-top: 25px;
+}
+.modal-call__btn {
+  /* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0 15px;
+	width: 139px;
+	height: 33px;
+	box-sizing: border-box;
+
+	/* 3 Typography */
+	font-size: 13px;
+	line-height: 13px;	
+	font-family: $font-main;
+	color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+	text-decoration: none;
+	-moz-appearance: none;
+
+	/* 4 Visual */
+	border: 1px solid $color-brown;
+	cursor: pointer;
+	outline: none;
+	border-radius: 0;
+	background-color: $color-brown;
+	
+	/* 5 Animation*/
+	transition: all 0.4s;
+
+	/* 6 Misc */
+  user-select: none;
+}
+.modal-call__btn:hover {
+  /* 4 Visual */
+  border-color: $color-black;
+  background-color: transparent;
+}
+.modal-call a.close-modal {
+  /* 1 Positioning */
+  top: 10px;
+  right: 10px;
+
+  /* 2 Block model */
+  width: 15px;
+  height: 15px;
+
+  /* 4 Visual */
+  background-image: url(../images/icon--cros.svg);
+
+  /* 5 Animation*/
+	transition: all 0.4s;
+}
+.modal-call a.close-modal:hover {
+  /* 4 Visual */
+  background-image: url(../images/icon--cros-gray.svg);
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

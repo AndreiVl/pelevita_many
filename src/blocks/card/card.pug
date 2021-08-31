@@ -1,0 +1,86 @@
+section.card
+	div.card__top
+		include ../card-product/card-product.pug
+
+
+	div.card__tab
+		div.gray-tabs
+			div.container
+				include ../menu-tab/menu-tab.pug
+
+			ul.tabs
+				li.tabs__item.tabs__item--active(id="tab_1") 
+					include ../product-desc/product-desc.pug
+
+				li.tabs__item(id="tab_2")
+					include ../product-desc/product-desc-1.pug
+
+	div.card__reviews
+		div.container
+			div.row
+				div.col-12
+					h3.card__h3 CUSTOMER REVIEWS
+
+					div.card__reviews-info
+						ul.card__reviews-stars-list
+							li.card__reviews-stars-item
+								img(src="images/img-card-star.png" alt="star")
+							li.card__reviews-stars-item
+								img(src="images/img-card-star.png" alt="star")
+							li.card__reviews-stars-item
+								img(src="images/img-card-star.png" alt="star")
+							li.card__reviews-stars-item
+								img(src="images/img-card-star.png" alt="star")
+							li.card__reviews-stars-item
+								img(src="images/img-card-star.png" alt="star")
+
+						p.card__reviews-tottal Based on 10 reviews
+
+						div.card__reviews-action
+							+btn({text: 'WRITE A REVIEW', type: 'link', url: '#modal_review'})(class="btn--big modal-link")
+
+					ul.card__reviews-list
+						li.card__reviews-item
+							include ../review/review.pug
+							+review({autor: 'm', color: '#fe7194',date: '10/26/2018', title: 'Using for 5 years now!!', name: 'Name of customer', desc: 'Love the way it feels on my face. I bought this hoping "sensitive" meant that it would hurt less than some of the other moisturizers Ive tried. Most face creams burn at least a little and turn my skin varying shades of red with irritation or pain. Not only does it not burn, it feels good on my poor dry skin. So soothing and hydrating.'})
+
+						li.card__reviews-item
+							+review({autor: 'v', color: '#63c4ba', date: '10/26/2018', title: 'Using for 5 years now!!', name: 'Name of customer', desc: 'This has been my go to moisturizer for a couple of years. Now my husband and teenage son have started to use it too. It is great for dry skin and it absorbs quickly. New England winters can be brutal on my face, and this stuff is amazing.'})
+
+						li.card__reviews-item
+							+review({autor: 'g', color: '#7f60be', date: '10/26/2018', title: 'Using for 5 years now!!', name: 'Name of customer', desc: 'During a cold winter i had a dry patch on my face that would not go away. I tried every lotion and cream (even prescription strength) and nothing worked until i used this cream. I love it so much! It was recommended to me by a sales associate at a big box makeup store. It hydrates my skin beautifully all year long. My son and my husband both love it too!'})
+
+						li.card__reviews-item
+							+review({autor: 'e', color: '#c46372', date: '10/26/2018', title: 'Using for 5 years now!!', name: 'Name of customer', desc: 'As for me, I used it with a serum I was already using, and the cream wasnt emollient enough for me. I am the exception to any rule, however, because Ive always had very dry skin and now a medival condition has made it twice as dry. I used this cream along with a very emollient prescription cream on my face but I still think it was a better moisturizer than the ones Ive tried from the Department stores. I think that, in time, my skin may become less dry as the weather gets warmer and more humid. But I will continue to buy this moisturizer, especially for my sister.'})
+
+					div.card__pagination
+						include ../pagination/pagination.pug
+
+	div.card__views-product
+		div.container
+			div.row
+				div.col-12
+					h2.h2.h2--28 RECENTLY VIEWED PRODUCTS
+
+					ul.slider-product
+						li.slider-product__item
+							include ../product/product.pug
+							+product({img: 'img-product-4.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+						li.slider-product__item
+							+product({img: 'img-product-5.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+						li.slider-product__item
+							+product({img: 'img-product-7.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+						li.slider-product__item
+							+product({img: 'img-product-4.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+						li.slider-product__item
+							+product({img: 'img-product-5.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+						li.slider-product__item
+							+product({img: 'img-product-7.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+						li.slider-product__item
+							+product({img: 'img-product-1.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})

@@ -1,0 +1,29 @@
+.icon-link__body {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+
+  /* 3 Typography */
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $color-black;
+  text-decoration: none;
+
+   /* 5 Animation*/
+   transition: all 0.4s;
+}
+.icon-link__body .icon {
+  /* 2 Block model */
+  margin-right: 8px;
+  height: 17px;
+  width: 17px;
+
+   /* 5 Animation*/
+   transition: all 0.4s;
+}
+.icon-link__body--12 span {
+  /* 3 Typography */
+  font-size: 12px;
+  line-height: 14px;
+}

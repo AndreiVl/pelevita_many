@@ -1,0 +1,232 @@
+.user {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @media(min-width: 440px) {
+    /* 2 Block model */
+    justify-content: flex-end;
+  }
+}
+.user__login {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+
+  /* 3 Typography */
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  color: $color-black;
+  text-decoration: none;
+
+  /* 5 Animation*/
+  transition: all 0.4s;
+  
+  @media(min-width: 440px) {
+    /* 2 Block model */
+    margin-right: 15px;
+  }
+  @media(min-width: 576px) {
+    /* 2 Block model */
+    margin-right: 50px;
+  }
+  @media(min-width: 768px) {
+    /* 3 Typography */
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+.user__login .icon {
+  /* 2 Block model */
+  margin-right: 9px;
+  width: 16px;
+  height: 16px;
+
+  /* 5 Animation*/
+  transition: all 0.4s;
+  
+  @media(min-width: 576px) {
+  /* 2 Block model */
+    width: 23px;
+    height: 23px;
+  }
+}
+.user__login:hover {
+  /* 3 Typography */
+  color: $color-brown;
+}
+.user__login:hover .icon {
+  /* 4 Visual */
+  fill: $color-brown;
+}
+.user__bag {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+
+  /* 3 Typography */
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  color: $color-black;
+  text-decoration: none;
+
+  /* 5 Animation*/
+	transition: all 0.4s;
+
+  @media(min-width: 440px) {
+    /* 2 Block model */
+    margin-right: 15px;
+  }
+  @media(min-width: 576px) {
+    /* 2 Block model */
+    margin-right: 19px;
+
+    /* 3 Typography */
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+.user__bag-img {
+  /* 1 Positioning */
+  position: relative;
+
+  /* 2 Block model */
+  display: flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  justify-content: center;
+  align-items: center;
+
+  /* 4 Visual */
+  background-image: url(../images/bag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* 5 Animation*/
+  transition: all 0.4s;
+  
+  @media(min-width: 576px) {
+    /* 2 Block model */
+    width: 22px;
+    height: 22px;
+  }
+}
+.user__bag:hover {
+  /* 3 Typography */
+  cursor: pointer;
+  color: $color-brown;
+}
+.user__bag:hover .user__bag-img {
+  /* 4 Visual */
+  cursor: pointer;
+  background-image: url(../images/bag-hover.png);
+}
+.user__bag-number {
+  /* 2 Block model */
+  padding-top: 6px;
+
+  /* 3 Typography */
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 500;
+  color: $color-white;
+
+  @media(min-width: 576px) {
+    /* 3 Typography */
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+.user__currency {
+  /* 2 Block model */
+  padding-top: 6px;
+
+  @media(min-width: 440px) {
+    /* 2 Block model */
+    margin-right: 15px;
+  }
+  @media(min-width: 576px) {
+    /* 2 Block model */
+    margin-right: 35px;
+    padding-top: 7px;
+  }
+}
+.user__like {
+  /* 1 Positioning */
+  position: relative;
+
+  /* 2 Block model */
+  display: flex;
+
+  /* 4 Visual */
+  cursor: pointer;
+}
+.user__like .icon {
+   /* 2 Block model */
+   width: 17px;
+   height: 16px;
+
+   /* 5 Animation*/
+  transition: all 0.4s;
+  
+  @media(min-width: 576px) {
+    /* 2 Block model */
+    width: 25px;
+    height: 22px;
+  }
+}
+.user__like:hover .icon {
+  /* 4 Visual */
+  fill: $color-brown;
+}
+.user__like-number {
+  /* 1 Positioning */
+  position: absolute;
+  top: 19%;
+  right: 35%;
+
+  /* 3 Typography */
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 500;
+  color: $color-white;
+
+  @media(min-width: 576px) {
+    /* 1 Positioning */
+    top: 22%;
+    right: 40%;
+
+     /* 3 Typography */
+    font-size: 12px;
+    line-height: 12px;
+  }
+  @media(min-width: 768px) {
+    /* 1 Positioning */
+    right: 41%;
+  }
+  @media(min-width: 992px) {
+    /* 1 Positioning */
+    right: 38%;
+  }
+  @media(min-width: 1200px) {
+    /* 1 Positioning */
+    right: 36%;
+  }
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

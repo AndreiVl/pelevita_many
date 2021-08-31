@@ -1,0 +1,131 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Pelevita')
+
+	body
+		include ../blocks/mixins.pug
+
+		+header({
+			items: [
+				{
+					url: 'catalog',
+					name: 'CATALOG'
+				},
+				{
+					url: 'card',
+					name: 'TRACKING'
+				},
+				{
+					url: 'contacts',
+					name: 'CONTACTS'
+				},
+				{
+					url: 'about-us',
+					name: 'ABOUT US'
+				}
+			]
+		})
+
+		include ../blocks/banner/banner.pug
+
+		include ../blocks/categories/categories.pug
+
+		section.bllock-1
+			div.container
+				div.row
+					div.col-12
+						h2.h2.h2--28 NEW IN
+						ul.slider-product
+							li.slider-product__item
+								include ../blocks/product/product.pug
+								+product({img: 'img-product-4.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90', hot: 'hot'})
+
+							li.slider-product__item
+								+product({img: 'img-product-5.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90', top: 'top'})
+
+							li.slider-product__item
+								+product({img: 'img-product-7.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90', new: 'new'})
+
+							li.slider-product__item
+								+product({img: 'img-product-4.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90', top: 'top'})
+
+							li.slider-product__item
+								+product({img: 'img-product-5.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90', hot: 'hot'})
+
+							li.slider-product__item
+								+product({img: 'img-product-7.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90', top: 'top'})
+
+							li.slider-product__item
+								+product({img: 'img-product-1.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90', new: 'new'})
+
+
+		section.bllock-2
+			h2.visually-hidden Merchandise
+			div.container
+				div.row
+					div.col-12.col-md-5
+						div.img-border
+							div.img-border__body
+								img(src="images/img-product.jpg" alt="product")
+
+					div.col-12.col-md-7
+						h3.h3.mr-b-20 STRONG MAN,  SOFT SKIN
+						p.text.text--normal-lh-30.mr-b-57 The cream has excellent stimulating and tightening properties, prevents moisture loss and the formation of fine wrinkles, eliminates inflammatory processes. The action of the components is aimed at preventing and eliminating the causes of the formation of wrinkles, “bags” and dark circles in the orbital zone.
+
+						+btn({text: 'SHOP NOW', type: 'link'})(class="btn--flat")
+
+
+		section.banner.banner--bg-dark
+			div.container
+				div.row
+					div.col-12.col-md-6
+						h2.visually-hidden Shor Cosmetics
+						p.banner__text Shor Cosmetics is a state-of-the art trademark brand and the crown jewel of O.S.A. Cosmetics, an Israeli company with more than a twenty- year history of producing professional-quality cosmetics under various brands.
+						p.banner__text.mr-b-50 They use the best that nature has to offer to make each one of us more beautiful. The Shor Cosmetics line includes the best and most innovative products developed over the course of the company’s extensive production experience.
+						+btn({text: 'LEARN MORE', type: 'link', })
+
+		section.bllock-3
+			div.container
+				div.row
+					div.col-12
+						h2.h2.h2--28 BEST SELLING PRODUCTS
+						ul.slider-product
+							li.slider-product__item
+								include ../blocks/product/product.pug
+								+product({img: 'img-product-4.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90', best: 'best'})
+
+							li.slider-product__item
+								+product({img: 'img-product-5.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+							li.slider-product__item
+								+product({img: 'img-product-7.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+							li.slider-product__item
+								+product({img: 'img-product-4.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+							li.slider-product__item
+								+product({img: 'img-product-5.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+							li.slider-product__item
+								+product({img: 'img-product-7.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+							li.slider-product__item
+								+product({img: 'img-product-1.jpg', img_title: 'AGE REBEL', title: 'AGE REBEL', desc: 'Cleansing Milk Pleasure for women', price: '$49.90'})
+
+		include ../blocks/services/services.pug
+
+		section.bllock-4
+			div.container
+				div.row
+					div.col-12
+						h2.visually-hidden Slider Reviews
+						include ../blocks/slider-reviews/slider-reviews.pug
+
+		include ../blocks/footer/footer.pug
+
+		include ../blocks/modal-call/modal-call.pug
+
+		include ../blocks/to-top/to-top.pug
+
+		include include/script.pug

@@ -1,0 +1,71 @@
+footer.footer
+  div.footer__top
+    div.container
+      div.row.align-items-center
+        div.col-12.col-md-6.col-lg-7
+          div.footer__left
+            div.footer__follow 
+              span Follow Us
+            div.footer__social 
+              include ../social-icon/social-icon.pug
+
+        div.col-12.col-md-6.col-lg-5
+          div.footer__right
+            div.footer__contacts
+              div.footer__phone
+                include ../icon-phone/icon-phone.pug
+
+              div.footer__mail
+                include ../icon-link/icon-link.pug
+                +icon-link({})
+
+  div.footer__body
+    div.container
+      div.row 
+        div.col-12.col-md-2
+          div.footer__logo
+            include ../logo/logo.pug
+
+
+        div.col-12.col-md-2
+          div.footer__menu
+            h3 SHOP
+            include ../menu-vertical/menu-vertical.pug
+            +vertical-menu({
+						items: ['Сatalog','Tracking'
+						  ]
+				  	})
+
+        div.col-12.col-md-3
+          div.footer__menu
+            h3 PURCHASE INFOё
+            +vertical-menu({
+						items: ['Refunds & Returns Policy','Payment Methods','Shipping & Delivery'
+						  ]
+				  	})
+        
+        div.col-12.col-md-2
+          div.footer__menu
+            h3 COMPANY INFO
+            +vertical-menu({
+						items: ['Contacts','About Us'
+						  ]
+				  	})
+
+        div.col-12.col-md-3
+          div.footer__menu
+            h3 LEGAL INFORMATION
+            +vertical-menu({
+						items: ['Privacy Policy','Terms & Conditions'
+						  ]
+				  	})
+
+  div.footer__bootom
+    div.container
+      div.row.align-items-center
+        div.col-12.col-md-7
+          div.footer__copyright
+            span Copyright 2019 © pelevita.com
+        div.col-12.col-md-5
+          div.footer__cards
+            include ../cards/cards.pug

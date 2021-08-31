@@ -1,0 +1,72 @@
+.service {
+  /* 2 Block model */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  /* 3 Typography */
+  text-align: center;
+}
+.service__img {
+  /* 2 Block model */
+  width: 100%;
+  max-width: 120px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.service__img img {
+  /* 2 Block model */
+  display: block;
+  width: 100%;
+}
+.service__title {
+  /* 2 Block model */
+  margin-bottom: 18px;
+}
+.service__title h3 {
+  /* 2 Block model */
+  margin: 0;
+
+  /* 3 Typography */
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $color-black;
+
+  @media(min-width: 992px) {
+    /* 3 Typography */
+    font-size: 16px;
+  }
+  @media(min-width: 1200px) {
+    /* 3 Typography */
+    font-size: 18px;
+  }
+}
+.service__desc {
+  /* 2 Block model */
+  width: 100%;
+  max-width: 330px;
+}
+.service__desc p {
+  /* 2 Block model */
+  margin: 0;
+
+  /* 3 Typography */
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $color-black;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

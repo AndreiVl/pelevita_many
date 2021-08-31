@@ -1,0 +1,40 @@
+
+.vidzhet-vishlist {
+  /* 1 Positioning */
+  position: absolute;
+  top: 10px;
+  z-index: 100;
+
+  /* 2 Block model */
+   width: 100%;
+   display: none;
+
+   @media(min-width: 768px) {
+     /* 1 Positioning */
+     top: 18px;
+   }
+}
+.vidzhet-vishlist__body {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  /* 3 Typography */
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-black;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  /* 4 Visual */
+  background-color: $color-brown;
+}
+.vidzhet-vishlist__body .icon {
+  /* 2 Block model */
+  width: 23px;
+  height: 23px;
+  margin-right: 12px;
+}

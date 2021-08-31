@@ -1,0 +1,18 @@
+div.forma
+	form.forma__form(action="#" method="post")
+
+		fieldset.forma__innput
+			div.forma__item-input
+				label(for="login") Nickname*
+				input(type="text" name="login" id="login"  placeholder="Enter your name")
+			div.forma__item-input
+				label(for="email") Email*
+				input(type="email" name="email" id="email"  placeholder="Enter your email (private)")
+
+		fieldset.forma__textarea
+			label(for="massage") Massage*
+			textarea(id="massage", name="massage", rows="5" placeholder="Your massage")
+			span Required fields are marked with *
+
+		div.forma__action
+			button.forma__btn(type="submit") SEND

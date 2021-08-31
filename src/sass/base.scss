@@ -1,0 +1,290 @@
+* {
+	text-rendering: geometricPrecision;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-smooth: always;
+}
+body {
+	/* 1 Positioning */ 
+	position: relative;
+
+	/* 2 Block model */ 
+	padding: 0;
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 20px;
+	line-height: 26px;
+
+	/* 4 Visual */ 
+	overflow-x: hidden;
+	color: #000000;
+
+	/* 5 Animation*/ 
+
+	/* 6 Misc */
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.bllock-1 {
+	/* 2 Block model */
+	padding-top: 20px;
+	padding-bottom: 40px;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 25px;
+		padding-bottom: 50px;
+	}
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		padding-top: 36px;
+		padding-bottom: 88px;
+	}
+}
+.bllock-2 {
+	/* 2 Block model */
+	padding-top: 25px;
+	padding-bottom: 50px;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 45px;
+		padding-bottom: 80px;
+	}
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		padding-top: 80px;
+		padding-bottom: 160px;
+	}
+}
+.bllock-3 {
+	/* 2 Block model */
+	padding-top: 25px;
+	padding-bottom: 40px;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 45px;
+		padding-bottom: 60px;
+	}
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		padding-top: 80px;
+		padding-bottom: 93px;
+	}
+}
+.bllock-4 {
+	/* 2 Block model */
+	padding-top: 40px;
+	padding-bottom: 35px;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 80px;
+		padding-bottom: 65px;
+	}
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		padding-top: 150px;
+		padding-bottom: 105px;
+	}
+}
+.img-border {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	width: 100%;
+	max-width: 350px;
+	margin-bottom: 20px;
+
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		margin-left: 10px;
+		margin-bottom: 0;
+
+		/* 4 Visual */
+		border: 2px solid #c6c6c6;
+	}
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		margin-left: 31px;
+	}
+}
+.img-border__body {
+	/* 1 Positioning */
+	position: relative;
+
+	@media(min-width: 768px) {
+		/* 1 Positioning */
+		top: -10px;
+		left: 10px;
+	}
+}
+.img-border__body img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+}
+.gray-tabs {
+	/* 4 Visual */
+	background-color: transparent;
+}
+.tabs {
+	/* 2 Block model */
+	margin: 0;
+	padding: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.tabs__item {
+	/* 2 Block model */
+	display: none;
+
+
+}
+.tabs__item--active {
+	/* 2 Block model */
+	display: block;
+
+	/* 5 Animation*/
+	animation-name: tabs-anim;
+	animation-duration: 2s;
+}
+.tabs__item .h1 {
+	/* 2 Block model */
+	padding: 23px 0 35px;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding: 53px 0 65px;
+	}
+}
+@keyframes tabs-anim {
+  0% {
+		/* 4 Visual */
+		opacity: 0;
+  }
+  100% {
+		/* 4 Visual */
+    opacity: 1;
+  }
+}
+
+.mobile-hiede--text {
+	/* 2 Block model */
+	display: none;
+
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		display: block;
+	}
+}
+.scrolled {
+	/* 2 Block model */
+	padding-top: 62px;
+
+	@media(min-width: 586px) {
+		/* 2 Block model */
+		padding-top: 63px;
+	}
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 93px;
+	}
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 92px;
+	}
+}
+.intro-page {
+	/* 2 Block model */
+	height: 100vh;
+	padding-top: 40px;
+	padding-bottom: 40px;	
+}
+.intro-page__top {
+	/* 2 Block model */
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.intro-page .logo {
+	/* 2 Block model */
+	width: 100px;
+}
+.intro-page__list {
+	/* 2 Block model */
+	margin: 0;
+	padding: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.intro-page__item {
+	/* 2 Block model */
+	margin-bottom: 15px;
+
+	/* 3 Typography */
+	text-align: center;
+
+	/* 4 Visual */
+	border: 1px solid #e1ba99;
+	border-bottom: 3px solid #e1ba99;
+	border-radius: 5px;
+
+	/* 4 Visual */
+	transition: all 0.4s;
+}
+.intro-page__item a {
+	/* 2 Block model */
+	display: block;
+	padding: 12px 20px 10px 20px;
+
+	/* 3 Typography */
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	/* 4 Visual */
+	transition: all 0.4s;
+}
+.intro-page__item:hover a {
+	/* 3 Typography */
+	color: #ffffff;
+
+	/* 4 Visual */
+	background-color: #e1ba99;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

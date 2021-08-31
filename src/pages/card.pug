@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Pelevita - Card')
+
+	body
+		include ../blocks/mixins.pug
+
+		+header({
+			items: [
+				{	
+					url: 'catalog',
+					name: 'CATALOG'
+				},
+				{
+					active: true,
+					url: 'card',
+					name: 'TRACKING'
+				},
+				{
+					url: 'contacts',
+					name: 'CONTACTS'
+				},
+				{
+					url: 'about-us',
+					name: 'ABOUT US'
+				}
+			]
+		})
+
+		include ../blocks/header/header.pug
+
+		+pageNavigation({
+			breadcrumbs: {
+				items:[
+					{
+						url: '/',
+						text: 'Main page'
+					},
+					{
+						url: 'catalog.html',
+						text: 'Catalog'
+					},
+					{
+						text: 'Cleansing Milk Pleasure for women'
+					}
+				]
+			}
+		})
+
+		include ../blocks/card/card.pug
+
+		include ../blocks/footer/footer.pug
+
+		include ../blocks/modal-call/modal-call.pug
+
+		include ../blocks/modal-review/modal-review.pug
+
+		include ../blocks/modal-certificates/modal-certificates.pug
+
+		include ../blocks/modal-question/modal-question.pug
+
+		include ../blocks/to-top/to-top.pug
+
+		include include/script.pug

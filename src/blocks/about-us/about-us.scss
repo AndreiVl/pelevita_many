@@ -1,0 +1,77 @@
+.about-us {
+  /* 2 Block model */
+  margin-bottom: 30px;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    margin-bottom: 50px;
+  }
+  @media(min-width: 992px) {
+    /* 2 Block model */
+    margin-bottom: 78px;
+  }
+}
+.about-us__img {
+  /* 1 Positioning */
+  position: relative;
+
+  /* 2 Block model */
+  margin-bottom: 45px;
+}
+.about-us__img img {
+  /* 2 Block model */
+  display: block;
+  width: 100%;
+}
+.about-us .text {
+  /* 2 Block model */
+  margin-bottom: 20px;
+}
+.about-us .text a {
+  /* 3 Typography */
+  color: $color-black;
+  text-decoration: none;
+}
+.about-us .text a:hover {
+  /* 3 Typography */
+  text-decoration: underline;
+
+  /* 4 Visual */
+  opacity: 0.7;
+}
+.about-us__img-name {
+  /* 1 Positioning */
+  position: absolute;
+  bottom: 9px;
+  left: 14px;
+
+  /* 2 Block model */
+  display: inline-block;
+
+  /* 3 Typography */
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $color-white;
+  text-align: right;
+
+  @media(min-width: 768px) {
+    /* 1 Positioning */
+    bottom: 6px;
+    left: -193px;
+
+    /* 3 Typography */
+    color: $color-black;
+  }
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

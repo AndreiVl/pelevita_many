@@ -1,0 +1,250 @@
+.product {
+  /* 1 Positioning */
+  position: relative;
+
+  /* 2 Block model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 294px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  /* 3 Typography */
+  text-align: center;
+}
+.product__img {
+  /* 2 Block model */
+  width: 100%;
+  max-width: 248px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.product__img img {
+  /* 2 Block model */
+  display: block;
+  width: 100%;
+
+  /* 5 Animation*/
+  transition: all 0.4s;
+}
+.product__img:hover img {
+  /* 4 Visual */
+  transform: scale(1.1);
+}
+.product__desc-link {
+  /* 3 Typography */
+  text-decoration: none;
+}
+.product__desc-link p {
+  /* 2 Block model */
+  margin: 0;
+
+  /* 3 Typography */
+  font-family: $font-main;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+  color: $color-black;
+
+  /* 5 Animation*/
+  transition: all 0.4s;
+}
+.product__desc-link:hover p {
+  /* 4 Visual */
+  opacity: 0.7;
+}
+.product__title {
+  /* 2 Block model */
+  height: 16px;
+  overflow: hidden;
+  margin-bottom: 19px;
+}
+.product__desc-link h3 {
+  /* 2 Block model */
+  margin: 0;
+
+  /* 3 Typography */
+	font-family: $font-main;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+  color: $color-black;
+  text-transform: uppercase;
+
+    /* 5 Animation*/
+  transition: all 0.4s;
+}
+.product__desc-link:hover h3 {
+  /* 4 Visual */
+  opacity: 0.7;
+}
+.product__desc {
+  /* 2 Block model */
+  height: 16px;
+  overflow: hidden;
+  margin-bottom: 17px;
+}
+
+.product__star {
+  /* 2 Block model */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  max-width: 110px;
+  justify-content: space-between;
+  margin-bottom: 9px;
+
+  /* 4 Visual */
+  list-style: none;
+}
+.product__star-item {
+  /* 2 Block model */
+  display: flex;
+  margin: 0 1.5px;
+}
+.product__star .icon {
+  /* 4 Visual */
+  fill: $color-brown;
+}
+.product__price {
+  /* 2 Block model */
+  margin-bottom: 16px;
+}
+.product__price span {
+  /* 2 Block model */
+  display: inline-block;
+
+  /* 3 Typography */
+  font-family: $font-main;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-black;
+}
+
+.product__action .btn {
+	/* 2 Block model */
+	width: 140px;
+	height: 41px;
+
+	/* 4 Visual */
+	border: 1px solid $color-brown;
+	background-color: $color-brown;
+}
+.product__action .btn__text {
+	/* 3 Typography */
+	font-size: 14px;
+	line-height: 14px;
+	color: $color-black;
+}
+.product__action .btn:hover {
+	/* 4 Visual */
+  border-color: $color-black;
+  background-color: transparent;
+}
+.product__offer {
+  /* 1 Positioning */
+  position: absolute;
+  top: 0;
+  left: 4px;
+  z-index: 50;
+
+  /* 3 Typography */
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  @media(min-width: 768px) {
+    /* 1 Positioning */
+    left: -6px;
+  }
+}
+.product__new-hot,
+.product__new-top,
+.product__new-new,
+.product__new-best {
+  /* 2 Block model */
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  /* 4 Visual */
+  border-radius: 50%;
+}
+.product__new-hot {
+  /* 3 Typography */
+  color: $color-pink;
+
+  /* 4 Visual */
+  border: 1px solid $color-pink;
+}
+.product__new-top {
+  /* 3 Typography */
+  color: $color-blue;
+
+  /* 4 Visual */
+  border: 1px solid $color-blue;
+}
+.product__new-new {
+  /* 3 Typography */
+  color: $color-green;
+
+  /* 4 Visual */
+  border: 1px solid $color-green;
+}
+.product__new-best {
+  /* 3 Typography */
+  color: $color-yelow;
+
+  /* 4 Visual */
+  border: 1px solid $color-yelow;
+}
+.product__like {
+  /* 1 Positioning */
+  position: absolute;
+  top: 36px;
+  right: 5px;
+  z-index: 50;
+}
+.product__btn-like {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+
+  /* 4 Visual */
+  background-color: transparent;
+  border: none;
+  background-image: url(../images/icon--heart_reg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* 5 Animation*/
+	transition: all 0.4s;
+}
+.product__btn-like:hover {
+  /* 4 Visual */
+  cursor: pointer;
+  background-image: url(../images/icon--heart_black.svg);
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

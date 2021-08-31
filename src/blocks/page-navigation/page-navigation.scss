@@ -1,0 +1,14 @@
+.page-navigation {
+  /* 2 Block model */
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    padding-bottom: 30px;
+  }
+  @media(min-width: 992px) {
+    /* 2 Block model */
+    padding-bottom: 52px;
+  }
+}

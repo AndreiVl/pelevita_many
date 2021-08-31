@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Pelevita - Contacts')
+
+	body
+		include ../blocks/mixins.pug
+
+		+header({
+			items: [
+				{
+					url: 'catalog',
+					name: 'CATALOG'
+				},
+				{
+					url: 'card',
+					name: 'TRACKING'
+				},
+				{	
+					active: true,
+					url: 'contacts',
+					name: 'CONTACTS'
+				},
+				{
+					url: 'about-us',
+					name: 'ABOUT US'
+				}
+			]
+		})
+
+		+pageNavigation({
+			breadcrumbs: {
+				items:[
+					{
+						url: '/',
+						text: 'Main page'
+					},
+					{
+						text: 'Contacts'
+					}
+				]
+			}
+		})
+
+		include ../blocks/contacts/contacts.pug
+
+		include ../blocks/footer/footer.pug
+
+		include ../blocks/modal-call/modal-call.pug
+
+		include ../blocks/to-top/to-top.pug
+
+		include include/script.pug

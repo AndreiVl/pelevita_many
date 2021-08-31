@@ -1,0 +1,16 @@
+div.item-basket
+  div.item-basket__img
+    a(href="#")
+      img(src="images/item-basket-img.jpg", alt="product")
+
+  div.item-basket__description
+    a.item-basket__title(href="") Cleansing Milk Pleasure for women
+    span  9.9 OZ.
+    a.item-basket__remove(href="") Remove
+
+  div.item-basket__action
+    include ../quantity/quantity.pug
+    +quantity({})(class="quantity--sm")
+
+  div.item-basket__cost
+    p $49.90

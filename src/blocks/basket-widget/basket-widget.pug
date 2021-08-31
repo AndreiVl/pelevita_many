@@ -1,0 +1,21 @@
+div.basket-widget
+  h2.basket-widget__title YOUR BAG (3 ITEMS)
+  ul.basket-widget__list
+    li.basket-widget__item
+      include ../item-basket/item-basket.pug
+
+    li.basket-widget__item
+      include ../item-basket/item-basket.pug
+
+    li.basket-widget__item
+      include ../item-basket/item-basket.pug
+      
+  div.basket-widget__total
+    span.basket-widget__text SUBTOTAL: 
+
+    span.basket-widget__sum $149,7
+
+  div.basket-widget__action 
+    a(href="") CONTINUE SHOPPING
+    span OR
+    +btn({text: 'CHECKOUT'})(class="btn--flat")

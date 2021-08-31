@@ -1,0 +1,268 @@
+.modal-review {
+  /* 2 Block model */
+  width: 100%;
+  max-width: 720px;
+  padding: 25px 10px 25px 10px;
+  
+  /* 4 Visual */
+  border-radius: 0;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    padding: 41px 30px 39px 47px;
+  }
+}
+.modal-review__body {
+   /* 2 Block model */
+   display: flex;
+   flex-direction: column;
+
+   @media(min-width: 768px) {
+    /* 2 Block model */
+    flex-direction: row;
+  }
+}
+.modal-review__left {
+  /* 2 Block model */
+  margin-right: 44px;
+}
+.modal-review__img {
+  /* 2 Block model */
+  margin-bottom: 20px;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    margin-bottom: 0;
+  }
+}
+.modal-review__link {
+   /* 2 Block model */
+   display: block;
+   max-width: 159px;
+}
+.modal-review__link img {
+  /* 2 Block model */
+  display: block;
+  width: 100%;
+}
+.modal-review__title {
+  /* 2 Block model */
+  margin: 0;
+  margin-bottom: 14px;
+
+  /* 3 Typography */
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #000000;
+}
+.modal-review__required {
+  /* 2 Block model */
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 19px;
+
+  /* 3 Typography */
+  font-size: 11px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+}
+.modal-review__raiting {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+  margin-bottom: 31px;
+}
+.modal-review__raiting-text {
+  /* 2 Block model */
+  margin: 0;
+  margin-right: 15px;
+
+  /* 3 Typography */
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000000;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    margin-right: 30px;
+  }
+}
+.modal-review__raiting span {
+  /* 2 Block model */
+  display: inline-block;
+  margin: 0;
+  margin-left: 15px;
+
+  /* 3 Typography */
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    margin-left: 31px;
+  }
+}
+.modal-review__form {
+  /* 2 Block model */
+  display: flex;
+  flex-direction: column;
+}
+.modal-review__form-wrap {
+  /* 2 Block model */
+  margin-bottom: 23px;
+}
+.modal-review__form label {
+  /* 2 Block model */
+  display: inline-block;
+  margin-bottom: 11px;
+
+  /* 3 Typography */
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+.modal-review__form input {
+  /* 2 Block model */
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 13px;
+
+  /* 3 Typography */
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #5a5a5a;
+
+  /* 4 Visual */
+  border: none;
+  border-bottom: 1px solid #edebe9;
+  outline: none;
+}
+.modal-review__form input::-webkit-input-placeholder {
+	text-overflow:ellipsis;
+	color: #5a5a5a;
+}
+.modal-review__form input::-moz-placeholder {
+	text-overflow:ellipsis;
+	color: #5a5a5a;
+}  
+.modal-review__form input:-ms-input-placeholder {
+	text-overflow:ellipsis;
+	color: #5a5a5a;
+}
+.modal-review__form textarea {
+  /* 2 Block model */
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 10px;
+
+  /* 3 Typography */
+  font-size: 12px;
+  line-height: 16px;	
+  font-family: $font-main;
+  color: #5a5a5a;
+  font-weight: normal;
+  overflow: hidden;
+
+  /* 4 Visual */
+  border: none;
+  border-bottom: 1px solid #edebe9;
+  outline: none;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    padding-bottom: 0;
+  }
+}
+.modal-review__action {
+  /* 2 Block model */
+  display: flex;
+  justify-content: center;
+  padding-top: 27px;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    justify-content: flex-start;
+  }
+}
+.modal-review__btn {
+  /* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0 15px;
+	width: 139px;
+	height: 33px;
+	box-sizing: border-box;
+
+	/* 3 Typography */
+	font-size: 13px;
+	line-height: 13px;	
+	font-family: $font-main;
+	color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+	text-decoration: none;
+	-moz-appearance: none;
+
+	/* 4 Visual */
+	border: 1px solid $color-brown;
+	cursor: pointer;
+	outline: none;
+	border-radius: 0;
+	background-color: $color-brown;
+	
+	/* 5 Animation*/
+	transition: all 0.4s;
+
+	/* 6 Misc */
+  user-select: none;
+}
+.modal-review__btn:hover {
+  /* 4 Visual */
+  border-color: $color-black;
+  background-color: transparent;
+}
+.modal-review a.close-modal {
+  /* 1 Positioning */
+  top: 12px;
+  right: 14px;
+
+  /* 2 Block model */
+  width: 15px;
+  height: 15px;
+
+  /* 4 Visual */
+  background-image: url(../images/icon--cros.svg);
+
+  /* 5 Animation*/
+	transition: all 0.4s;
+}
+.modal-review a.close-modal:hover {
+  /* 4 Visual */
+  background-image: url(../images/icon--cros-gray.svg);
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

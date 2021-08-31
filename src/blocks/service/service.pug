@@ -1,0 +1,8 @@
+mixin service(data)
+  div.service
+    div.service__img
+      img(src="images/"+data.img, alt=data.alt)
+    div.service__title
+      h3!=data.title
+    div.service__desc
+      p!=data.desc

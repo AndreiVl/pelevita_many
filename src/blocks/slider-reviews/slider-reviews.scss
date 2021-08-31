@@ -1,0 +1,126 @@
+.slider-reviews {
+  /* 2 Block model */
+  margin: 0;
+  padding: 0;
+
+  /* 4 Visual */
+  list-style: none;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    padding: 0 60px;
+  }
+  @media(min-width: 992px) {
+    /* 2 Block model */
+    padding: 0 70px;
+  }
+}
+.slider-reviews__item {
+  /* 2 Block model */
+  padding: 0 15px;
+  padding-right: 25px;
+  
+  /* 4 Visual */
+  outline: none;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    padding: 0 10px;
+    padding-right: 0;
+  }
+  @media(min-width: 992px) {
+    /* 2 Block model */
+    padding: 0 15px;
+  }
+}
+.slider-reviews__arrow-left {
+  /* 1 Positioning */
+  position: absolute;
+  top: 56px;
+  left: -4px;
+  content: "";
+  z-index: 50;
+
+  /* 2 Block model */
+  display: block;
+  width: 22px;
+  height: 34px;
+
+  /* 4 Visual */
+  background-image: url(../images/slider-arrow-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+
+  /* 5 Animation*/
+  transition: all 0.4s;
+  
+  @media(min-width: 768px) {
+    /* 1 Positioning */
+    top: 42px;
+  }
+  @media(min-width: 1200px) {
+    /* 1 Positioning */
+    left: 8px;
+  }
+  @media(min-width: 1400px) {
+    /* 1 Positioning */
+    left: 0;
+  }
+}
+.slider-reviews__arrow-right {
+  /* 1 Positioning */
+  position: absolute;
+  top: 56px;
+  right: 4px;
+  z-index: 50;
+
+  content: "";
+  
+  /* 2 Block model */
+  display: block;
+  width: 22px;
+  height: 34px;
+
+   /* 4 Visual */
+   background-image: url(../images/slider-arrow-right.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   cursor: pointer;
+
+   /* 5 Animation*/
+  transition: all 0.4s;
+  
+   @media(min-width: 700px) {
+    /* 1 Positioning */
+    right: -4px;
+  }
+  @media(min-width: 768px) {
+    /* 1 Positioning */
+    right: -4px;
+    top: 42px;
+  }
+   @media(min-width: 1200px) {
+    /* 1 Positioning */
+    right: 0;
+  }
+}
+.slider-reviews__arrow-left:hover {
+  /* 4 Visual */
+  background-image: url(../images/slider-arrow-left-hover.png)
+}
+.slider-reviews__arrow-right:hover {
+  /* 4 Visual */
+  background-image: url(../images/slider-arrow-right-hover.png)
+}
+.slider-reviews .review__info {
+  /* 2 Block model */
+  padding-left: 35px;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    padding: 0;
+  }
+}

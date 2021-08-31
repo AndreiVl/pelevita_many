@@ -1,0 +1,47 @@
+.cards {
+  /* 2 Block model */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  /* 4 Visual */
+  list-style: none;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    justify-content: flex-start;
+  }
+}
+.cards__item {
+  /* 2 Block model */
+  margin-right: 32px;
+  height: 34px;
+}
+.cards__item:last-child {
+  /* 2 Block model */
+  margin-right: 0;
+}
+.cards__item {
+  /* 3 Typography */
+  color: $color-black;
+
+  /* 4 Visual */
+  opacity: 0.4;
+}
+.cards__item .icon {
+  /* 2 Block model */
+  width: 44px;
+  height: 34px;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

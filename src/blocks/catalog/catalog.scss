@@ -1,0 +1,127 @@
+.catalog__title {
+	/* 2 Block model */
+  margin: 0;
+  /* 2 Block model */
+  margin-bottom: 28px;
+
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+  color: $color-black;
+  text-transform: uppercase;
+  text-align: center;
+
+	@media(min-width: 992px) {
+    /* 2 Block model */
+    margin-bottom: 36px;
+
+		/* 3 Typography */
+		font-size: 20px;
+		line-height: 30px;
+	}
+		@media(min-width: 1200px) {
+    /* 2 Block model */
+    margin-bottom: 48px;
+
+		/* 3 Typography */
+		font-size: 24px;
+		line-height: 34px;
+	}
+		@media(min-width: 1400px) {
+    /* 2 Block model */
+    margin-bottom: 51px;
+
+		/* 3 Typography */
+		font-size: 28px;
+		line-height: 36px;
+	}
+}
+.catalog .text {
+  /* 2 Block model */
+  margin-bottom: 26px;
+
+  /* 3 Typography */
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.catalog__img-bg {
+  /* 2 Block model */
+  height: 100px;
+  margin-bottom: 26px;
+  
+  /* 4 Visual */
+  background-image: url(../images/bg-catalog-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    height: 150px;
+    margin-bottom: 56px;
+  }
+  @media(min-width: 1200px) {
+    /* 2 Block model */
+    height: 170px;
+    margin-bottom: 76px;
+  }
+}
+.catalog__img-bg--1 {
+  /* 4 Visual */
+  background-image: url(../images/bg-catalog-2.png);
+}
+.catalog__img-bg--2 {
+  /* 4 Visual */
+  background-image: url(../images/bg-catalog-3.png);
+}
+.catalog__img-bg--3 {
+  /* 4 Visual */
+  background-image: url(../images/bg-catalog-4.png);
+}
+.catalog__list {
+  /* 2 Block model */
+  padding-top: 44px;
+  padding-bottom: 21px;
+}
+.catalog__item {
+  /* 2 Block model */
+  margin-bottom: 30px;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    margin-bottom: 60px;
+  }
+  @media(min-width: 1200px) {
+    /* 2 Block model */
+    margin-bottom: 92px;
+  }
+}
+.catalog__slider {
+  /* 2 Block model */
+  margin-bottom: 40px;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    margin-bottom: 80px;
+  }
+  @media(min-width: 1200px) {
+    /* 2 Block model */
+    margin-bottom: 138px;
+  }
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

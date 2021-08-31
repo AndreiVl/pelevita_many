@@ -1,0 +1,52 @@
+.h2 {
+	/* 2 Block model */
+	margin: 0;
+	margin-bottom: 20px;
+
+	/* 3 Typography */
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 28px;
+	color: $color-black;
+	text-align: center;
+	text-transform: uppercase;
+
+	@media(min-width: 768px) {
+		/* 3 Typography */
+		font-size: 28px;
+		line-height: 36px;
+	}
+	@media(min-width: 992px) {
+		/* 3 Typography */
+		font-size: 32px;
+		line-height: 40px;
+	}
+		@media(min-width: 1200px) {
+		/* 3 Typography */
+		font-size: 34px;
+		line-height: 42px;
+	}
+		@media(min-width: 1400px) {
+		/* 2 Block model */
+		margin-bottom: 48px;
+
+		/* 3 Typography */
+		font-size: 32px;
+		line-height: 44px;
+	}
+}
+.h2--28 {
+	/* 2 Block model */
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 25px;
+
+	@media(min-width: 1400px) {
+	/* 2 Block model */
+	margin-bottom: 48px;
+
+	/* 3 Typography */
+	font-size: 28px;
+	line-height: 34px;
+	}
+}

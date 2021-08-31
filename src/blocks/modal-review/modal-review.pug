@@ -1,0 +1,37 @@
+div.modal.modal-review(id="modal_review")
+	div.modal-review__body
+		div.modal-review__left
+			div.modal-review__img
+				a.modal-review__link(href="#")
+					img(src="images/img-review.jpg" alt="product")
+
+		div.modal-review__right
+			p.modal-review__title My Review for Cleansing Milk Pleasure for women
+			span.modal-review__required Required fields are marked with *
+
+			div.modal-review__raiting
+				p.modal-review__raiting-text Overall Rating*
+
+				include ../rating/rating.pug
+
+				span Click to rate!
+
+			form.modal-review__form
+
+				div.modal-review__form-wrap.mr-b-35
+					label(for="title") Review Title*
+					input(type="text" name="title" id="title" placeholder="Example: I would buy this product again and again!")
+
+				div.modal-review__form-wrap
+					label(for="review") Review*
+					textarea(id="review" name="review" rows="2" placeholder="Example: I bought this a month ago and am so happy that I did...")
+
+				div.modal-review__form-wrap
+					label(for="loginThre") Nickname*
+					input(type="text" name="loginThre" id="loginThre" placeholder="Enter your nickname (public)")
+
+				div.modal-review__form-wrap
+					label(for="emailThre") Email*
+					input(type="email" name="emailThre" id="emailThre" placeholder="Enter your email (private)")
+				div.modal-review__action
+					button.modal-review__btn(type="submit") SEND

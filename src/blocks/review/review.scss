@@ -1,0 +1,137 @@
+.review {
+  /* 2 Block model */
+  display: flex;
+}
+.review__autor {
+  /* 2 Block model */
+  display: none;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    display: block;
+    width: 60px;
+    flex: 0 0 60px;
+  }
+  @media(min-width: 992px) {
+    /* 2 Block model */
+    width: 131px;
+    flex: 0 0 131px;
+  }
+}
+.review__autor span {
+  /* 2 Block model */
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+
+  /* 3 Typography */
+  font-family: $font-third;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: $color-white;
+  text-transform: uppercase;
+
+  /* 4 Visual */
+  border-radius: 50%;
+  background-color: red;
+
+  @media(min-width: 992px) {
+    /* 2 Block model */
+    width: 105px;
+    height: 105px;
+
+    /* 3 Typography */
+    font-size: 74px;
+    line-height: 74px;
+  }
+}
+.review__info {
+  /* 2 Block model */
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    padding: 0;
+  }
+}
+.review__info-top {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+
+  /* 3 Typography */
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $color-black;
+}
+.review__rating {
+  /* 2 Block model */
+  margin: 0;
+  padding: 0;
+  margin-right: 12px;
+  display: flex;
+  width: 100%;
+  max-width: 110px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+
+  /* 4 Visual */
+  list-style: none;
+
+  @media(min-width: 372px) {
+    /* 2 Block model */
+    margin-bottom: 0;
+  }
+}
+.review__title {
+  /* 2 Block model */
+  margin: 0;
+  margin-bottom: 8px;
+
+  /* 3 Typography */
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $color-black;
+}
+.review__name {
+  /* 2 Block model */
+  margin: 0;
+  margin-bottom: 14px;
+
+  /* 3 Typography */
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: normal;
+  color: $color-black;
+}
+.review__desc {
+  /* 2 Block model */
+  margin: 0;
+  margin-bottom: 6px;
+
+  /* 3 Typography */
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $color-black;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

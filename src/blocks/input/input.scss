@@ -1,0 +1,67 @@
+.input {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+}
+.input label {
+	/* 2 Block model */
+	margin: 0;
+	padding: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: medium;
+	line-height: 16px;
+	color: #D6D7D8;
+}
+.input input {
+	/* 2 Block model */
+	margin: 0;
+	padding: 13px 10px 14px 15px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: medium;
+	line-height: 16px;
+	color: $color-black;
+
+	/* 4 Visual */
+	border: 1px solid $color-brown;
+}
+.input input:hover {
+	/* 4 Visual */
+	outline: 1px solid $color-brown;
+}
+.input input:focus {
+	/* 4 Visual */
+	outline: 1px solid $color-brown;
+}
+.input input:active {
+	/* 4 Visual */
+	outline: 1px solid $color-brown;
+}
+.input input::-webkit-input-placeholder {
+	/* 3 Typography */
+  color: #D6D7D8;
+}
+.input input:-moz-placeholder {
+	/* 3 Typography */
+  color: #D6D7D8;
+  text-overflow:ellipsis;
+}
+.input input::-moz-placeholder {
+	/* 3 Typography */
+  color: #D6D7D8;
+  text-overflow:ellipsis;
+}
+.input input:-ms-input-placeholder {
+	/* 3 Typography */
+  color: #D6D7D8;
+  text-overflow:ellipsis;
+}
+.input input[placeholder] {
+	/* 3 Typography */
+	text-overflow:ellipsis;
+}

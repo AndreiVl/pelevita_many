@@ -1,0 +1,33 @@
+.modal-certificates {
+  /* 2 Block model */
+  width: 100%;
+  max-width: 488px;
+  padding: 12px 50px 20px 6px;
+
+  /* 4 Visual */
+  border-radius: 0;
+}
+.modal-certificates__img img {
+  /* 2 Block model */
+  display: block;
+  width: 100%;
+}
+.modal-certificates a.close-modal {
+  /* 1 Positioning */
+  top: 10px;
+  right: 13px;
+
+  /* 2 Block model */
+  width: 15px;
+  height: 15px;
+
+  /* 4 Visual */
+  background-image: url(../images/icon--cros.svg);
+
+  /* 5 Animation*/
+	transition: all 0.4s;
+}
+.modal-certificates a.close-modal:hover {
+  /* 4 Visual */
+  background-image: url(../images/icon--cros-gray.svg);
+}

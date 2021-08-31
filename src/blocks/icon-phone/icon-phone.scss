@@ -1,0 +1,35 @@
+.icon-phone {
+  /* 2 Block model */
+  display: flex;
+  align-items: center;
+
+  /* 3 Typography */
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $color-black;
+  text-decoration: none;
+
+   /* 5 Animation*/
+   transition: all 0.4s;
+}
+.icon-phone .icon {
+  /* 2 Block model */
+  margin-right: 8px;
+  height: 17px;
+  width: 17px;
+
+   /* 5 Animation*/
+   transition: all 0.4s;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

@@ -1,0 +1,139 @@
+.btn {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0 15px;
+	width: 174px;
+	height: 46px;
+	box-sizing: border-box;
+
+	/* 3 Typography */
+	font-size: 18px;
+	line-height: 18px;	
+	font-family: $font-main;
+	color: $color-white;
+	font-weight: bold;
+	text-decoration: none;
+	-moz-appearance: none;
+
+	/* 4 Visual */
+	border: 2px solid $color-white;
+	cursor: pointer;
+	outline: none;
+	border-radius: 0;
+	background-color: transparent;
+	
+	/* 5 Animation*/
+	transition: all 0.4s;
+
+	/* 6 Misc */
+	user-select: none;
+}
+.btn:hover {
+	/* 4 Visual */
+	border-color: $color-brown;
+	background-color: $color-brown;
+}
+.btn:active {
+	/* 4 Visual */
+	border-color: $color-brown;
+	background-color: $color-brown;
+}
+.btn--disabled {
+	/* 4 Visual */
+	background-color: $color-brown;
+}
+.btn__text {
+	/* 3 Typography */
+	font-family: $font-main;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	color: $color-white;
+
+	/* 5 Animation*/
+	transition: all 0.4s;
+}
+.btn--sm {
+	/* 2 Block model */
+	width: 121px;
+	height: 29px;
+
+	/* 4 Visual */
+	border: 1px solid #383838;
+}
+.btn--sm .btn__text {
+	/* 3 Typography */
+	font-size: 12px;
+	line-height: 12px;
+	color: $color-black;
+}
+.btn--big {
+	/* 2 Block model */
+	width: 171px;
+	height: 39px;
+
+	/* 4 Visual */
+	border: 1px solid $color-gray;
+}
+.btn--big .btn__text {
+	/* 3 Typography */
+	font-size: 13px;
+	line-height: 13px;
+	color: $color-black;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.btn--big:hover {
+	/* 4 Visual */
+	border-color: $color-black;
+	background-color: transparent;
+}
+.btn--flat {
+	/* 2 Block model */
+	width: 208px;
+	height: 59px;
+
+	/* 4 Visual */
+	border: 1px solid $color-brown;
+	background-color: $color-brown;
+}
+.btn--flat .btn__text {
+	/* 3 Typography */
+	font-size: 16px;
+	line-height: 16px;
+	color: $color-black;
+}
+.btn--flat:hover {
+	/* 4 Visual */
+	border: 1px solid $color-black;
+	background-color: transparent;
+}
+.btn--menu {
+	/* 2 Block model */
+	padding: 12px 53px;
+}
+.btn__text--menu {
+	/* 3 Typography */
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

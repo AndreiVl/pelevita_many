@@ -1,0 +1,8 @@
+mixin pageNavigation(data)
+	div.page-navigation
+		div.container
+			div.row
+				div.col-12
+					include ../breadcrumbs/breadcrumbs.pug
+					+breadcrumbs(data.breadcrumbs)
+					//- +breadcrumbs({items:['Main page','About Us']})

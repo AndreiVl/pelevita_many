@@ -1,0 +1,50 @@
+section.contacts
+  div.container
+    div.row.align-items-center
+      div.col-12
+        h2.h2 LET'S KEEP IN TOUCH!
+        p.text.text--16 For all your questions or requests about cosmetics, do not hesitate to contact us.  You will receive an answer as soon as possible.
+
+    div.row
+      div.col-12
+        div.contacts__img
+          img(src="images/img-contacts.jpg", alt="Pelevita")
+ 
+  div.container
+    div.contacts__container
+      div.row
+        div.col-12.col-md-6
+          div.contacts__left
+            include ../forma/forma.pug
+
+        div.col-12.col-md-6
+          div.contacts__right
+            h3.contacts__title CONTACTS
+            p.text.text--12 Communication with and feedback from you are critical to us, no less than the high quality of our cosmetics themselves. Do not hesitate to write – we are happy to answer any questions.
+
+            div.contacts__phone
+              include ../icon-phone/icon-phone.pug
+
+            div.contacts__mail
+              include ../icon-link/icon-link.pug
+              +icon-link({})(class='icon-link__body--12')
+
+            h3.contacts__title JULIA PASHA — COMPANY CREATOR
+            p.text.text--12 I am ready to answer your questions personally at any time – just write me at my personal email. I’ll give you an exclusive discount just for writing and registering on our site.
+
+            div.contacts__email
+              img(src="images/img-contacs-emal.png", alt="@")
+              a(href="mailto:julia@pelevita.com") julia@pelevita.com
+
+            h3.contacts__title ADDRESS
+
+            div.contacts__adress
+              +icon('icon--map-marker')
+              span Shmuel 3/36, Holon, Israel 
+
+            div.contacts__social
+              h3.contacts__title SOCIAL MEDIA
+              p.text.text--12 Follow us on social networks and keep up to date with our publications, new products and offers
+
+              include ../social-icon/social-icon.pug
+          

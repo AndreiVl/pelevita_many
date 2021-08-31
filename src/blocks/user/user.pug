@@ -1,0 +1,28 @@
+div.user
+  a.user__login(href="#")
+    +icon('icon--user')
+    span LOGIN
+
+  div.user__bag
+    div.user__bag-img
+      span.user__bag-number 1
+    span 129,3
+
+  div.user__currency
+    include ../currency-select/currency-select.pug
+    +currency-select({
+      name: 'currency',
+      value: [
+        'USD',
+        'CAD'
+      ],
+      items: [
+        'USD',
+        'CAD'
+      ]
+    })
+    
+  
+  div.user__like 
+    +icon('icon--heart_black')
+    span.user__like-number 1

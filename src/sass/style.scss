@@ -1,0 +1,70 @@
+@import 'fonts';
+@import 'grid/bootstrap-grid';
+@import 'variables';
+@import 'mixins';
+@import 'base';
+
+
+/*
+ * Blocks BEM library
+ *
+ */
+
+// Mixins
+@import '../blocks/icon/icon';
+@import '../blocks/btn/btn';
+@import '../blocks/input/input';
+@import '../blocks/menu/menu';
+@import '../blocks/menu-vertical/menu-vertical';
+@import '../blocks/select/select';
+@import '../blocks/item-basket/item-basket';
+@import '../blocks/currency-select/currency-select';
+@import '../blocks/service/service';
+@import '../blocks/breadcrumbs/breadcrumbs';
+@import '../blocks/product/product';
+@import '../blocks/pagination/pagination';
+@import '../blocks/review/review';
+
+// Blocks
+@import '../blocks/h1/h1';
+@import '../blocks/h2/h2';
+@import '../blocks/h3/h3';
+@import '../blocks/text/text';
+@import '../blocks/lead/lead';
+@import '../blocks/logo/logo';
+@import '../blocks/link/link';
+@import '../blocks/vidzhet-vishlist/vidzhet-vishlist';
+@import '../blocks/social-icon/social-icon';
+@import '../blocks/icon-phone/icon-phone';
+@import '../blocks/icon-link/icon-link';
+@import '../blocks/user/user';
+@import '../blocks/basket-widget/basket-widget';
+@import '../blocks/cards/cards';
+@import '../blocks/forma/forma';
+@import '../blocks/quantity/quantity';
+@import '../blocks/slider-product/slider-product';
+@import '../blocks/card-product/card-product';
+@import '../blocks/rating/rating';
+@import '../blocks/to-top/to-top';
+@import '../blocks/modal-call/modal-call';
+@import '../blocks/modal-question/modal-question';
+@import '../blocks/modal-review/modal-review';
+@import '../blocks/modal-certificates/modal-certificates';
+@import '../blocks/slider-reviews/slider-reviews';
+@import '../blocks/menu-tab/menu-tab';
+@import '../blocks/product-desc/product-desc';
+
+
+// Main Blocks
+@import '../blocks/header/header';
+@import '../blocks/page-navigation/page-navigation';
+@import '../blocks/banner/banner';
+@import '../blocks/categories/categories';
+@import '../blocks/about-us/about-us';
+@import '../blocks/contacts/contacts';
+@import '../blocks/catalog/catalog';
+@import '../blocks/card/card';
+@import '../blocks/footer/footer';
+
+
+@import '../blocks/mr/mr';

@@ -1,0 +1,131 @@
+div.card-product
+  div.container
+    div.row
+      div.col-12.col-md-6
+        div.card-product__left
+          div.card-product__slider-top
+            div.card-product__item
+              div.card-product__item-img
+                a(href="#")
+                  img(src="images/img-slider-bottom-5.jpg", alt="product")
+              div.card-product__offer
+                span.card-product__new-hot hot
+
+              div.card-product__like
+                button.card-product__btn-like(type="button")
+
+            div.card-product__item
+              div.card-product__item-img
+                a(href="#")
+                  img(src="images/img-slider-bottom-2.jpg", alt="product")
+              div.card-product__offer
+                span.card-product__new-hot hot
+
+              div.card-product__like
+                button.card-product__btn-like(type="button")
+
+            div.card-product__item
+              div.card-product__item-img
+                a(href="#")
+                  img(src="images/img-slider-bottom-4.jpg", alt="product")
+              div.card-product__offer
+                span.card-product__new-hot hot
+
+              div.card-product__like
+                button.card-product__btn-like(type="button")
+
+            div.card-product__item
+              div.card-product__item-img
+                a(href="#")
+                  img(src="images/img-slider-bottom-1.jpg", alt="product")
+              div.card-product__offer
+                span.card-product__new-hot hot
+
+              div.card-product__like
+                button.card-product__btn-like(type="button")
+
+            div.card-product__item
+              div.card-product__item-img
+                a(href="#")
+                  img(src="images/img-slider-bottom-3.jpg", alt="product")
+              div.card-product__offer
+                span.card-product__new-hot hot
+
+              div.card-product__like
+                button.card-product__btn-like(type="button")
+
+            div.card-product__item
+              div.card-product__item-img
+                a(href="#")
+                  img(src="images/img-slider-bottom-1.jpg", alt="product")
+              div.card-product__offer
+                span.card-product__new-hot hot
+
+              div.card-product__like
+                button.card-product__btn-like(type="button")
+
+          ul.card-product__slider
+            li.card-product__slider-item
+              img(src="images/img-slider-bottom-5.jpg", alt="product")
+            li.card-product__slider-item
+              img(src="images/img-slider-bottom-2.jpg", alt="product")
+            li.card-product__slider-item
+              img(src="images/img-slider-bottom-4.jpg", alt="product")
+            li.card-product__slider-item
+              img(src="images/img-slider-bottom-1.jpg", alt="product")
+            li.card-product__slider-item
+              img(src="images/img-slider-bottom-3.jpg", alt="product")
+            li.card-product__slider-item
+              img(src="images/img-slider-bottom-1.jpg", alt="product")
+
+      div.col-12.col-md-6
+        h2.card-product__title Cleansing Milk Pleasure for women
+        h3.card-product__firm AGE REBEL
+
+        div.card-product__stars
+          ul.card-product__stars-list
+            li.card-product__stars-item
+              img(src="images/img-product-star.png", alt="star")
+            li.card-product__stars-item
+              img(src="images/img-product-star.png", alt="star")
+            li.card-product__stars-item
+              img(src="images/img-product-star.png", alt="star")
+            li.card-product__stars-item
+              img(src="images/img-product-star.png", alt="star")
+            li.card-product__stars-item
+              img(src="images/img-product-star.png", alt="star")
+
+          span.card-product__stars-number 10 
+          span.card-product__reviews Reviews
+
+        div.card-product__desc
+          p.text.text--14  CLEANSING MILK PLEASURE is an excellent gentle but thorough cleansing milk and makeup remover.
+          p.text.text--14  Created specifically for use on sensitive skin, this unique cosmetic product is evenly absorbed when applied to the surface of the skin of the face, neck and décolleté. Deeply cleansing the skin tissue, it soothes rough, dry or irritated skin and improves its tone and texture.
+          p.text.text--14  Moisturizes and renews skin cells and strengthens the protective external barrier of the skin for better moisture retention. Its pure white lotus extract ingredient deeply cleanses and rejuvenates skin layers.
+        
+        div.card-product__price
+          span $49.90
+            sup.card-product__price-old $60.90
+        div.card-product__stock
+          span 96 in stock
+
+        span.card-product__qty QTY
+        div.card-product__action
+          div.card-product__action-add
+            include ../quantity/quantity.pug
+            +quantity({})
+
+          div.card-product__buy
+            +btn({text: 'ADD TO CART'})(class="btn--flat")
+            span OR
+            a.card-product__buy-link(href="#")
+              img(src="images/img-card-product-amazon.png", alt="amazon.com")
+
+          div.card-product__action-share
+            button.card-product__btn-share(type="button")
+              +icon('icon--share')
+              span Share
+
+        span.card-product__free Free shipping
+        a.card-product__shipng(href="#") Shipping & Delivery
+        

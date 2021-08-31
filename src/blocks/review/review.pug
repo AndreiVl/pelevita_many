@@ -1,0 +1,27 @@
+mixin review(data)
+  div.review&attributes(attributes)
+    div.review__autor
+      span(style="background-color:"+data.color+";")!=data.autor
+
+    div.review__info 
+      div.review__info-top
+        ul.review__rating
+          li.review__rating-item
+            img(src="images/img-product-star.png", alt="star")
+          li.review__rating-item
+            img(src="images/img-product-star.png", alt="star")
+          li.review__rating-item
+            img(src="images/img-product-star.png", alt="star")
+          li.review__rating-item
+            img(src="images/img-product-star.png", alt="star")
+          li.review__rating-item
+            img(src="images/img-product-star.png", alt="star")
+
+        if data.date
+          span.review__date!=data.date
+
+      p.review__title!=data.title
+
+      p.review__name!=data.name
+
+      p.review__desc!=data.desc

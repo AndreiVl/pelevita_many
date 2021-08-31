@@ -1,0 +1,55 @@
+mixin header(data)
+	header.header
+		div.header__top
+			div.container
+				div.row.align-items-center
+					div.col-md-3.col-lg-5.d-none.d-md-block
+						div.header__social 
+							include ../social-icon/social-icon.pug
+
+					div.col-12.col-md-9.col-lg-7
+						div.header__top-right
+							div.header__mail
+								include ../icon-link/icon-link.pug
+								+icon-link({})(class='icon-link__body--12')
+
+							div.header__phone
+								include ../icon-phone/icon-phone.pug
+
+							div.header__action
+								include ../btn/btn.pug
+								+btn({text: 'CALLBACK', type: 'link', url: '#modal_contact'})(class="btn--sm modal-link")
+
+		div.header__navigation
+			div.container
+				div.row.align-items-center
+					div.col-12.col-lg-5
+						div.header__menu.header__mobile
+							nav.menu
+								ul.menu__list
+									- for (var i = 0; i < data.items.length; i++)
+										- var className = ''
+
+										if data.items[i]['active']
+											- var className = 'menu__item--active'
+
+										li.menu__item(class=className)
+											a.menu__link(href=data.items[i]['url'])!=data.items[i]['name']
+
+					div.col-3.col-sm-2.col-lg-2
+						div.header__logo
+							include ../logo/logo.pug
+
+					div.col-9.col-sm-10.col-lg-5
+						div.header__user-navigation
+							include ../user/user.pug
+
+							button.header__btn(type="button")
+								span.visually-hidden Открыть меню
+								span.header__btn-visual
+
+			div.header__widget
+				div.header__widget-overlay
+				include ../basket-widget/basket-widget.pug
+
+				include ../vidzhet-vishlist/vidzhet-vishlist.pug

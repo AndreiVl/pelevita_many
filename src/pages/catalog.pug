@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Pelevita - Catalog')
+
+	body
+		include ../blocks/mixins.pug
+
+		+header({
+			items: [
+				{	
+					active: true,
+					url: 'catalog',
+					name: 'CATALOG'
+				},
+				{
+					url: 'card',
+					name: 'TRACKING'
+				},
+				{
+					url: 'contacts',
+					name: 'CONTACTS'
+				},
+				{
+					url: 'about-us',
+					name: 'ABOUT US'
+				}
+			]
+		})
+
+		+pageNavigation({
+			breadcrumbs: {
+				items:[
+					{
+						url: '/',
+						text: 'Main page'
+					},
+					{
+						text: 'Catalog'
+					}
+				]
+			}
+		})
+
+		include ../blocks/catalog/catalog.pug
+
+		include ../blocks/footer/footer.pug
+
+		include ../blocks/modal-call/modal-call.pug
+
+		include ../blocks/to-top/to-top.pug
+
+		include include/script.pug

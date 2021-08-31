@@ -1,0 +1,89 @@
+.pagination {
+  /* 2 Block model */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  /* 3 Typography */
+
+  /* 4 Visual */
+  list-style: none;
+}
+.pagination__item {
+  /* 2 Block model */
+  display: flex;
+  margin-right: 11px;
+}
+.pagination__item:first-child {
+  /* 2 Block model */
+  margin-right: 12px;
+}
+.pagination__item:last-child {
+  /* 2 Block model */
+  margin-right: 0;
+}
+.pagination__number {
+  /* 2 Block model */
+  display: inline-block;
+
+  /* 3 Typography */
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $color-brown;
+}
+.pagination__link {
+   /* 1 Positioning */
+   position: relative;
+
+  /* 2 Block model */
+  display: inline-block;
+
+  /* 3 Typography */
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $color-black;
+  text-decoration: none;
+
+  /* 5 Animation*/
+  transition: all 0.4s;
+}
+.pagination__link:hover {
+  /* 3 Typography */
+  color: #b17d63;
+}
+.pagination__arrow-end:before {
+  /* 1 Positioning */
+  position: absolute;
+  top: 4px;
+  right: -4px;
+  content: '';
+
+  /* 2 Block model */
+  display: block;
+  width: 3px;
+  height: 13px;
+
+  /* 4 Visual */
+  background-color: $color-black;
+
+  /* 5 Animation*/
+  transition: all 0.4s;
+}
+.pagination__arrow-end:hover::before {
+  /* 4 Visual */
+  background-color: #b17d63;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Pelevita')
+
+	body
+		include ../blocks/mixins.pug
+
+		div.intro-page
+			div.container
+				div.row.justify-content-center
+					div.col-12.col-lg-6
+						div.intro-page__top
+							include ../blocks/logo/logo.pug 
+
+						ul.intro-page__list
+							li.intro-page__item
+								a(href="index" target="_blank") home
+
+							li.intro-page__item
+								a(href="catalog" target="_blank") catalog
+
+							li.intro-page__item
+								a(href="card" target="_blank") card
+
+							li.intro-page__item
+								a(href="about-us" target="_blank") about-us
+
+							li.intro-page__item
+								a(href="contacts" target="_blank") contacts
+
+		include include/script.pug

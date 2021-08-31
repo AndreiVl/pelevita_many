@@ -1,0 +1,15 @@
+div.modal.modal-question(id="modal_question")
+	p.modal-question__title ASK A QUESTION
+
+	form.modal-question__form(action="#" method="post")
+		label.visually-hidden(for="loginTwo") name
+		input(type="text" name="loginTwo" id="loginTwo" placeholder="Enter your name")
+
+		label.visually-hidden(for="emailTwo") Email*
+		input(type="email" name="emailTwo" id="emailTwo" placeholder="Enter your email")
+
+		label.visually-hidden(for="massage") Massage*
+		textarea(id="massage" name="massage" rows="2" placeholder="Write your question here")
+
+		div.modal-question__action
+			button.modal-call__btn(type="submit") Send

@@ -1,0 +1,76 @@
+/*
+ * Fonts
+ *
+ */
+
+$font-main: 'HelveticaNeueCyr', sans-serif;
+$font-second: 'Myriad Pro',  sans-serif;
+$font-third: 'Gotham Pro',  sans-serif;
+
+/*
+ * Colors
+ *
+ */
+
+$color-black: #000000;
+$color-white: #ffffff;
+
+$color-brown: #e1ba99;
+
+$color-green: #057358;
+$color-blue: #3e39a4;
+$color-red: #bb4360;
+$color-yelow: #a97f40;
+
+$color-pink: #fe7194;
+$color-light-green: #63c4ba;
+
+$color-gray: #8d8d8d;
+
+/*
+ * Grid system
+ *
+ */
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+$breakpoints: (
+	xs: 0,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+  xxxl: 2500px
+);
+
+/*
+ * Animation Speed
+ *
+ */
+
+$animation-speed: 0.4s;
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

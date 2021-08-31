@@ -1,0 +1,44 @@
+mixin product(data)
+	div.product(class!=attributes.class)
+		div.product__img
+			a.product__img-link(href="#")
+				img(src="images/"+data.img, alt=data.img_title)
+
+		div.product__desc
+			a.product__desc-link(href="#")
+				p!=data.desc
+
+		div.product__title
+			a.product__desc-link(href="#")
+				h3!=data.title
+
+		ul.product__star
+			li.product__star-item
+				img(src="images/img-product-star.png" alt="star")
+			li.product__star-item
+				img(src="images/img-product-star.png" alt="star")
+			li.product__star-item
+				img(src="images/img-product-star.png" alt="star")
+			li.product__star-item
+				img(src="images/img-product-star.png" alt="star")
+			li.product__star-item
+				img(src="images/img-product-star.png" alt="star")
+
+		div.product__price
+			span!=data.price
+
+		div.product__action
+			+btn({text: 'ADD TO CART'})
+
+		div.product__offer
+			if data.hot
+				span.product__new-hot!=data.hot
+			if data.top
+				span.product__new-top!=data.top
+			if data.new
+				span.product__new-new!=data.new
+			if data.best
+				span.product__new-best!=data.best
+
+		div.product__like
+			button.product__btn-like(type="button")
